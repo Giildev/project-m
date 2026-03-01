@@ -1,0 +1,17 @@
+# Carpetas generadas por Unity
+/Library/
+/Temp/
+/Logs/
+/obj/
+/Build/
+/Builds/
+/UserSettings/
+
+# Archivos de Visual Studio
+.vs/
+*.csproj
+*.sln
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
