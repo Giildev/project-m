@@ -92,8 +92,8 @@ public class CharacterMovement : MonoBehaviour
         // Start slightly above the feet
         Vector3 rayStart = transform.position + Vector3.up * 0.1f;
         
-        // Raycast down by 0.2f units
-        RaycastHit[] hits = Physics.RaycastAll(rayStart, Vector3.down, 0.3f);
+        // Raycast using the configured groundCheckDistance
+        RaycastHit[] hits = Physics.RaycastAll(rayStart, Vector3.down, groundCheckDistance);
         
         isGrounded = false;
         foreach(var hit in hits)
